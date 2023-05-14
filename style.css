@@ -1,12 +1,12 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
 .top, .footer {
-    background-color: #1f2937;
+    background-color: #d319d3;
 }
 
 .logo {
@@ -17,7 +17,12 @@ body {
 
 .header_links {
     display: flex;
-    gap: 10px;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
 }
 
 .header {
@@ -35,60 +40,54 @@ body {
     max-width: 350px;
 }
 
-.hero_main {
+.hero_main, .images {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 800;
 }
 
 .hero_secondary, .header_links, .image, .footer {
-    font-size: 12px;
+    font-size: 18px;
     color: #e5e7eb;
 }
 
 .image {
     display: flex;
-    background-color: grey;
     flex-shrink: 0;
-    flex-grow: 2;
+    flex-grow: 3;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    max-width: 300px;
-}
-.image div {
-    text-align: center;
+    min-height: 186px;
+    max-width: 500px;
 }
 
 .header_logo {
     font-size: 24px;
     color: #f9faf8;
 }
-
-button {
+button, .green {
     display: flex;
-    justify-content: center;
     color: white;
-    background-color: #3882f6;
-    width: 75px;
+    background-color: #27a501;
+    border-radius: 5px;
+}
+button {
+    justify-content: center;
+    width: 150px;
     height: 30px;
     padding: 5px;
     flex-shrink: 0;
-    border-radius: 5px;
 }
 
-.blue button {
+.green button {
     border: 2px solid white
 }
 
-.blue {
-    color: white;
-    background-color: #3882f6;
-    display: flex;
+.green {
     padding: 25px 50px;
-    border-radius: 5px;
     justify-content: space-between;
     gap: 20px;
+    align-items: center;
 }
 
 .a {
@@ -110,29 +109,28 @@ div .a {
     display: flex;
     gap: 20px;
     flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .square {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #3882f6;
+    border: 2px solid #27a501;
     border-radius: 15px;
     margin-bottom: 10px;
+    width: 150px;
   }
 
   .description {
     text-align:center;
   }
-
-.square div {
-    width: 100px;
-    height: 100px;
-}
 
 .section_1 {
     display: flex;
@@ -141,10 +139,10 @@ div .a {
 }
 
 .section_2 {
-    background-color: #e5e7eb;
+    background-color: #f3c9fc;
     display: flex;
     flex-direction: column;
-    padding: 50px 200px
+    padding: 50px 200px 100px
 }
 
 .section_3 {
@@ -152,9 +150,11 @@ div .a {
 }
 
 .author {
+    font-size: 18px;
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
+    margin-right: 50px;
 }
 
 .quote {
@@ -164,6 +164,7 @@ div .a {
     font-weight: lighter;
     color: #1f2937;
     margin-bottom: 10px;
+    margin-top: 75px;
 }
 
 .bold_text {
@@ -179,4 +180,25 @@ div .a {
     display: flex;
     justify-content: center;
     padding: 20px 100px;
+}
+
+
+/* images.html */
+
+
+.collage {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.icon {
+    width: 40%;
+    height: fit-content;
+}
+
+.images {
+    padding: 50px;
+    margin-left: 30px;
 }
